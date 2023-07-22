@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meu Portfólio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Will Martins</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">Sobre</a></li>
+          <li><a href="#experience">Experiência</a></li>
+          <li><a href="#projects">Projetos</a></li>
+          <li><a href="#contact">Contato</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Will Martins</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">Sobre</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experiência</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projetos</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contato</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./imagens/1Black Minimalist Simple Instagram Profile Picture.png" alt="Foto de perfil de John Doe" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Olá, eu sou</p>
+        <h1 class="title">Willyan Martins</h1>
+        <p class="section__text__p2">Desenvolvedor Frontend</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume-example.pdf')"
+          >
+            Baixar CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Informações de Contato
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="Meu perfil do LinkedIn"
+            class="icon"
+            onclick="location.href='https://linkedin.com/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="Meu perfil do Github"
+            class="icon"
+            onclick="location.href='https://github.com/'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Conheça Mais</p>
+      <h1 class="title">Sobre Mim</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./imagens/2.png"
+            alt="Foto de perfil"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Ícone de Experiência"
+                class="icon"
+              />
+              <h3>Experiência</h3>
+              <p>6 meses <br />Estudando Frontend</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Ícone de Educação"
+                class="icon"
+              />
+              <h3>Educação</h3>
+              <p>2 anos Tecnologia da informação<br /></p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+                Olá! Sou Willyan Martins, um apaixonado por tecnologia e desenvolvimento Front-End. Natural de Curitiba, tenho 26 anos e estou em busca de oportunidades para fazer a diferença nesse universo digital. Com habilidades em HTML, CSS e JavaScript, estou pronto para criar experiências únicas e envolventes. Junte-se a mim nessa jornada de inovação e criatividade no mundo do Front-End!
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Ícone de Seta"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore Minha</p>
+      <h1 class="title">Experiência</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Desenvolvimento Frontend</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Ícone de Experiência"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>intermediário</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Ícone de Experiência"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>intermediario</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Ícone de Experiência"
+                  class="icon"
+                />
+                <div>
+                  <h3>python</h3>
+                  <p>Básico</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Ícone de Experiência"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Básico</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Ícone de Experiência"
+                  class="icon"
+                />
+                <div>
+                  <h3>TypeScript</h3>
+                  <p>Básico</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Ícone de Experiência"
+                  class="icon"
+                />
+                <div>
+                  <h3>Material UI</h3>
+                  <p>Básico</p>
+                </div>
+              </article>
+            </div>
+          </div>
+         
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Ícone de Seta"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Veja Meus</p>
+      <h1 class="title">Projetos</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./imagens/1Sem título.png"
+                alt="Projeto 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Loja de tenis</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/WillSPACCE/Projeto-Loja'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://willspacce.github.io/Projeto-Loja/'"
+              >
+                Demonstração ao Vivo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src=".//imagens/2Sem título.png"
+                alt="Projeto 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Landing Page</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/WillSPACCE/Projeto-LandingPage'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://willspacce.github.io/Projeto-LandingPage/'"
+              >
+                Demonstração ao Vivo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./imagens/4Sem título.png"
+                alt="Projeto 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Projeto Login</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/WillSPACCE/Projeto-login'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://willspacce.github.io/Projeto-login/'"
+              >
+                Demonstração ao Vivo
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Ícone de Seta"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Entre em Contato</p>
+      <h1 class="title">Contate-me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Ícone de E-mail"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:exemplomail@gmail.com">willyanice@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="Ícone do LinkedIn"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/will-martins-443800281/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">Sobre</a></li>
+            <li><a href="#experience">Experiência</a></li>
+            <li><a href="#projects">Projetos</a></li>
+            <li><a href="#contact">Contato</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Direitos Autorais &#169; 2023 Will martins. Todos os direitos reservados.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
